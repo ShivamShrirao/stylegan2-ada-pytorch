@@ -1,0 +1,1 @@
+python dataset_tool.py --source /home/azureuser/data/gan-db/full-body/ --dest /home/azureuser/data/gan-proc.zip

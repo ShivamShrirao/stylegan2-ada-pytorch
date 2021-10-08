@@ -45,7 +45,8 @@ def file_ext(name: Union[str, Path]) -> str:
 
 def is_image_ext(fname: Union[str, Path]) -> bool:
     ext = file_ext(fname).lower()
-    return f'.{ext}' in PIL.Image.EXTENSION # type: ignore
+    return f'.{ext}' in ('.png', '.webp', '.jpg', '.jpeg')
+    # return f'.{ext}' in PIL.Image.EXTENSION # type: ignore
 
 #----------------------------------------------------------------------------
 
